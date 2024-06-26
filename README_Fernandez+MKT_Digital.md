@@ -33,31 +33,48 @@ Esta base de datos está diseñada para gestionar la alocación del dinero para 
 ### Tablas:
 
 1. **CLIENTE**:
-   - Almacena información sobre los clientes que realizan reservas.
-   - Atributos: IDCLIENTE, NOMBRE, TELEFONO, CORREO.
+   - Almacena la información de los clientes que utilizan los servicios de alocación de marketing digital.
+   - Atributos: IDCLIENTE, NOMBRE, TELEFONO, MAIL, DIRECCION.
 
 2. **EMPLEADO**:
-   - Contiene información sobre los empleados involucrados en el proceso de reservas.
-   - Atributos: IDEMPLEADO, NOMBRE, TELEFONO, CORREO, IDRESTAURANTE.
+   - Contiene los datos de los empleados involucrados en la gestión de presupuestos, ventas y atención al cliente.
+   - Atributos: IDEMPLEADO, CARGO, NOMBRE, TELEFONO, MAIL.
 
-3. **DUEÑO**:
-   - Guarda datos sobre los dueños de los restaurantes (no se utiliza explícitamente en el proceso de reservas).
+3. **TIPOSERVICIO**:
+   -  Clasifica los servicios ofrecidos según nivel de personalización.
+   -  Atributos: IDTIPOSERVICIO, NOMBRE, DESCRIPCION, COMENTARIO.
 
-4. **TIPORESERVA**:
-   - Define diferentes tipos de reserva para clasificarlas según su propósito o requisitos específicos.
-   - Atributos: IDTIPORESERVA, TIPO.
+4. **SERVICIO**:
+   - Detalla los servicios específicos ofrecidos a los clientes.
+   - Atributos: IDSERVICIO, IDTIPOSERVICIO, FECHA, DESCRPCION.
 
-5. **RESTAURANTE**:
-   - Almacena información sobre los restaurantes disponibles.
-   - Atributos: IDRESTAURANTE, NOMBRE, DIRECCION, TELEFONO.
+5. **PLATAFORMA_MKT**:
+   - Almacena información sobre las plataformas donde se realizarán las campañas de marketing digital.
+   - Atributos: IDPLATAFORMA, NOMBRE, DESCRIPCION, ESTADO_SATURACION.
 
-6. **MESA**:
-   - Contiene información sobre las mesas disponibles en cada restaurante.
-   - Atributos: IDMESA, IDRESTAURANTE, CAPACIDAD, DISPONIBLE.
+6. **ASIGNACION_PRESUPUESTO**:
+   - Contiene información sobre la asociación de los clientes con las plataformas específicas y el monto de presupuesto asignado.
+   - Atributos: IDASIGNACION, IDCLIENTE, IDPLATAFORMA, FECHA, MONTO.
 
-7. **RESERVA**:
-   - Registra las reservas realizadas por los clientes.
-   - Atributos: IDRESERVA, IDCLIENTE, IDMESA, IDEMPLEADO, IDTIPORESERVA, FECHA.
+7. **VENTA**:
+   - Registra cada transacción de venta realizada a través de la aplicación.
+   - Atributos: IDVENTA, IDCLIENTE, IDSERVICIO, IDEMPLEADO, FECHA, COMENTARIO.
+
+8. **COBRO**:
+   - Registra cada transacción de cobro relacionada con las ventas realizadas.
+   - Atributos: IDCOBRO, IDVENTA, IDCLIENTE, IDEMPLEADO, FECHA, COMENTARIO.
+
+9. **PERFORMANCE_PLATAFORMAS**:
+   - Registra métricas de rendimiento de cada plataforma de marketing (datos clave sobre el rendimiento de cada plataforma a lo largo del tiempo, permitiendo evaluar la efectividad de las campañas).
+   - Atributos: IDPERFORMANCE_PLATAFORMA , IDPLATAFORMA, METRICA, FECHA, 
+
+10. **FORMA_COBRO**:
+   - Define las formas específicas de cobro registrados en el sistema.
+   - Atributos: IDFORMA_COBRO, IDCOBRO, COMENTARIO.
+
+11. **HISTORIAL_COBRO**:
+   - Registra el historial detallado de cada cobro realizado.
+   - Atributos: IDHISTORIAL_COBRO, IDCOBRO, IDFORMA_COBRO, IDEMPLEADO, COMENTARIO.
 
 ### Problemática Resuelta:
 
