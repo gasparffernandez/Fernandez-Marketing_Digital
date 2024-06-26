@@ -78,14 +78,15 @@ Esta base de datos está diseñada para gestionar la alocación del dinero para 
 
 ### Problemática Resuelta:
 
-Esta base de datos permite gestionar eficientemente el proceso de reserva en restaurantes, desde la información de los clientes y empleados hasta la disponibilidad de mesas y el registro de reservas. Algunos aspectos que aborda incluyen:
+Esta base de datos permite gestionar eficientemente la alocación del marketing digital, abordando diversos aspectos cruciales para optimizar la distribución de presupuestos en plataformas digitales. Algunos puntos clave que abarca incluyen:
 
-- Registro de clientes y empleados involucrados en el proceso de reserva.
-- Clasificación de las reservas según su tipo.
-- Gestión de la disponibilidad de mesas en cada restaurante.
-- Registro detallado de las reservas realizadas, incluyendo la fecha, cliente, mesa, empleado y tipo de reserva.
+- Registro de clientes y empleados involucrados en el proceso de la alocación.
+- Gestión de tipo de servicio.
+- Gestión de plataforma de Marketing Digital.
+- Registro detallado de las ventas realizadas.
+- Registro detallado de los cobros realizados.
 
-En resumen, esta base de datos proporciona una estructura para organizar y gestionar eficientemente las operaciones de reserva en restaurantes, lo que contribuye a mejorar el servicio ofrecido a los clientes y optimizar las operaciones del restaurante.
+En resumen, esta base de datos proporciona una estructura integral para gestionar de manera eficiente y escalable la alocación del marketing digital. Facilita la toma de decisiones estratégicas, mejora la efectividad de las campañas y contribuye a optimizar el retorno de inversión al evitar la saturación de canales.
 */
 
 ### MEDIOS DE RESERVAS
