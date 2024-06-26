@@ -89,38 +89,4 @@ Esta base de datos permite gestionar eficientemente la alocación del marketing 
 En resumen, esta base de datos proporciona una estructura integral para gestionar de manera eficiente y escalable la alocación del marketing digital. Facilita la toma de decisiones estratégicas, mejora la efectividad de las campañas y contribuye a optimizar el retorno de inversión al evitar la saturación de canales.
 */
 
-### MEDIOS DE RESERVAS
-
-
-#### DER SIMPLIFICADO
-```
-+------------------+        +-----------------------+        +------------------+
-|      CLIENTE     |        |       RESERVA         |        |     RESTAURANTE  |
-+------------------+        +-----------------------+        +------------------+
-| idCliente (PK)   |<>-----o| idReserva (PK)        |o-------| idRestaurante(PK)|
-| nombre           |        | idCliente (FK)        |        | nombre           |
-| telefono         |        | idMesa (FK)           |        | direccion        |
-| correo           |        | idEmpleado (FK)       |        | telefono         |
-+------------------+        | idTipoReserva (FK)    |        +------------------+
-                            | fecha                 |
-                            | cancelacion           |                  |
-                            +-----------------------+                  |
-                                    |                                  |
-                                    |                                  |
-                                    v                                  v
-+------------------+        +------------------+             +-------------------+
-|     Empleado     |        |      Mesa        |             |     Dueno         |
-+------------------+        +------------------+             +-------------------+
-| idEmpleado (PK)  |        | idMesa (PK)      |             | idDueno (PK)      |
-| nombre           |        | idRestaurante(FK)|             | nombre            |
-| telefono         |        | capacidad        |             | correo            |
-| correo           |        | disponible       |             | telefono          |
-| idRestaurante(FK)|        +------------------+             +-------------------+
-+------------------+                  |
-                             +-------------------+
-                             |   TipoReserva     |
-                             +-------------------+
-                             | idTipoReserva(PK) |
-                             | tipo              |
-                             +-------------------+
 ``
