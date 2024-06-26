@@ -3,7 +3,11 @@
 
 ### Problema:
 
-Nuestro equipo de desarrollo está trabajando en un sistema de gestión de reservas para restaurantes, y nos enfrentamos a la necesidad de diseñar una base de datos eficiente que pueda manejar todas las operaciones relacionadas con las reservas de manera óptima.
+Hoy en día, existen múltiples plataformas a través de las cuales realizar marketing de manera online, plataformas como Google, Facebook, Mercado Libre, Twitter, Tiktok, entre otros. La cantidad de posibilidades es inmensa, cada uno de estos canales ofrece distintas funcionalidades y tienen sus propios usuarios.
+
+Ante esto nos surge la pregunta de cómo distribuir dicho presupuesto. Al realizar esta pregunta a profesionales del marketing, la mayoría de ellos asegura que distribuyen su presupuesto de una manera intuitiva, basándose en el mercado que tienen y en qué canales les resultaban más cómodos.
+
+Esto presenta un problema ya que existe un fenómeno que está dañando la eficiencia de las campañas de anuncios digitales que corren hoy en día. Este problema se conoce como saturación de canales y se da porque, a medida que la inversión en marketing aumenta, las ventas aumentan a un ritmo cada vez menor debido a que se saturan los canales, y como consecuencia, cae el retorno de los anuncios realizados por plataformas digitales.
 
 ### Descripción del Problema:
 
