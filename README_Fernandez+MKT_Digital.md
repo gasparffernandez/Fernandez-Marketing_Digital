@@ -87,6 +87,3 @@ Esta base de datos permite gestionar eficientemente la alocación del marketing 
 - Registro detallado de los cobros realizados.
 
 En resumen, esta base de datos proporciona una estructura integral para gestionar de manera eficiente y escalable la alocación del marketing digital. Facilita la toma de decisiones estratégicas, mejora la efectividad de las campañas y contribuye a optimizar el retorno de inversión al evitar la saturación de canales.
-*/
-
-``
